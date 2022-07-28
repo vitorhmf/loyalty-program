@@ -2,6 +2,8 @@
 
 ### Unsupervised Learning - Clustering Project
 
+<img src="cover_loyalty_program.png" width="1000">
+
 ## 1. Abstract
 
 This repository contains the solution of clustering valuable clients in order to launch a loyalty program called Insiders
