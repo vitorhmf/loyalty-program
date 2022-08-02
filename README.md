@@ -2,7 +2,7 @@
 
 ### Unsupervised Learning - Clustering Project
 
-<img src="cover_loyalty_program.png" width="1000">
+<img src="image/cover_loyalty_program.png" width="1000">
 
 ## 1. Abstract
 
