@@ -1,4 +1,4 @@
-# Insiders Loyalty Program
+# Insiders Loyalty Program (Under Development)
 
 ### Unsupervised Learning - Clustering Project
 
@@ -52,6 +52,8 @@ The clustering will be performed from a dataset with 541,909 purchase records, 4
 | Unit Price             | Product price per unit                                                                                   |
 | Customer ID            | Unique customer identifier                                                                               |
 | Country                | The name of the country the customer resides in                                                          |
+
+*Source:* [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 
 ### 3.2. Business assumption: 
 
