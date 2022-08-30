@@ -33,6 +33,14 @@ To direct your reading, below are links to the development carried out at each s
 
 ### 3.1. Context
 
+The company All in One Place is a Multibrand Outlet that sells second-line products from various brands at a lower price, through an e-commerce.
+
+In just over 1 years of operation, the business team realized that some customers from its base buy more expensive products, with high frequency and end up contributing a significant portion of the company's revenue. Based on this perception, the marketing team decided to launch a loyalty program for the best customers in the base, called Insiders.
+
+This project aims to solve the demand to carry out a selection of customers eligible for the Insiders program, using advanced data manipulation techniques.
+
+The clustering will be performed from a dataset with 541,909 purchase records, 4,373 customers and carried out between December 2010 and December 2011. The attributes are described below:
+
 
 | Feature                | Definition                                                                                               |
 |------------------------|----------------------------------------------------------------------------------------------------------|
@@ -56,8 +64,7 @@ To direct your reading, below are links to the development carried out at each s
 To build an overview of the data, the following steps were performed:
 * Change the columns name to sneak_case;
 * Shows the data dimensions (rows and columns);
-* Check and Fillout NA: the dataset did not have any missing values;
-
+* Check and Fillout NA: The initial dataset contained 135,080 records without the customer id. As it represents about 25% of the dataset, this data could not be simply disregarded. To solve this problem, customers ids were created starting from the number 19000 for each record that did not contain this attribute.
 
 ### 4.2 Data Descriptive: 
 
@@ -73,23 +80,23 @@ A quick descriptive analysis of numerical and categorical variables was performe
  
 ### 4.3. Feature Engineering
 
-Before performing the feature engineering, a mental map was created to evaluate the relationship between the sales phenomenon and the agents that act on it, as well as the attributes of each agent.
-
-<img src="image/mind_map.png" width="800">
-
-From this mental map, business hypotheses were created in order to develop the understanding of the case and raise new variables that are important to derive from the original dataset for the creation of the machine learning model.
- 
 In this step, the following features were created:
-* Vehicle Age: changed to snake case;
-* Vehicle Damage: changed to 1 (yes) or 0 (no);
+* Gross Revenue:
+* Recency:
+* Quantity of purchases:
+* Quantity of diferent products purchased:
+* Quantity of items:
+* Frequency:
+* Returns:
+* Satisfaction Rate:
 
 ### 4.4. Data Filtering
 
-In this project, it was not necessary to apply any type of filter to the dataset
+* Bad Users:
+* Categorical Attributes:
+* Numerical Attributes:
 
 ### 4.5. Exploratory Data Analysis
-
-In the data exploration, univariate, bivariate and multivariate analyzes were performed. Of the business insights obtained in this phase, 3 stood out for presenting different results than expected:
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
@@ -98,8 +105,6 @@ In the data exploration, univariate, bivariate and multivariate analyzes were pe
 ### 5.1 Feature Transformation
 
 ### 5.2 Feature Selection: 
-
-The feature selection was performed using the extra trees classifier algorithm
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
@@ -126,7 +131,7 @@ The feature selection was performed using the extra trees classifier algorithm
 ## 10. References
 
 * [IBM Docs](https://www.ibm.com/docs/en/spss-modeler/18.2.0?topic=dm-crisp-help-overview)
-* [Kaggle](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction)
+* [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 * [Comunidade DS](https://www.comunidadedatascience.com/)
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
