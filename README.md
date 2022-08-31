@@ -74,11 +74,15 @@ A quick descriptive analysis of numerical and categorical variables was performe
  
 **Numerical Attributes:**
 
-<img src="image/num_attributes.png" width="600">
+<img src="image/num_attributes.png" width="700">
+
+Negative quantity and unit price indicate returns. These cases will be dealt with later.
 
 **Categorical Attributes:**
 
-<img src="image/cat_attributes.png" width="800">
+<img src="image/cat_attributes.png" width="700">
+
+The fact that the invoice number and stock code features appear as categorical attributes indicates that we have some records that have letters in their compositions and not just numbers as would normally be expected.
  
 ### 4.3. Feature Engineering
 
