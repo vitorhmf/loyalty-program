@@ -83,26 +83,28 @@ Negative quantity and unit price indicate returns. These cases will be dealt wit
 <img src="image/cat_attributes.png" width="700">
 
 The fact that the invoice number and stock code features appear as categorical attributes indicates that we have some records that have letters in their compositions and not just numbers as would normally be expected.
- 
-### 4.3. Feature Engineering
+
+### 4.3. Data Filtering
+
+* **Bad Users:** customers who had the number of returned items greater than or equal to the number of purchased items were excluded from the analysis.
+* **Categorical Attributes:** because we don't have more information, stock codes that were words or letters were filtered. And for not contributing to the clustering process, the description feature was removed from the dataset
+* **Numerical Attributes:** Purchasing records with values less than $0.04 were filtered
+
+### 4.4. Feature Engineering
 
 In this step, the following features were created:
-* Gross Revenue:
-* Recency:
-* Quantity of purchases:
-* Quantity of diferent products purchased:
-* Quantity of items:
-* Frequency:
-* Returns:
-* Satisfaction Rate:
-
-### 4.4. Data Filtering
-
-* Bad Users:
-* Categorical Attributes:
-* Numerical Attributes:
+* **Gross Revenue:** quantity multiplied by the unit price.
+* **Recency:** number of days since last purchase.
+* **Quantity of purchases:** quantity of purchases of each customer.
+* **Quantity of products:** quantity of different products purchased by each customer.
+* **Quantity of items:** total amount of items purchased by each customer.
+* **Frequency:** average amount of purchases made per day by a customer.
+* **Returns:** total amount of items returned by each customer.
+* **Satisfaction Rate:** % of items that were not returned by each customer.
 
 ### 4.5. Exploratory Data Analysis
+
+The Exploratory Data Analysis was performed using the pandas profiling package. 
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
