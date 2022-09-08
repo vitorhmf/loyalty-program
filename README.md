@@ -110,24 +110,56 @@ To verify the correlation between the features, Spearman's rank correlation coef
 
 From these two analyses, 4 attributes were filtered for the next steps, as shown below.
 
+**Correlation:**
 
+<img src="image/eda_correlations.png" width="600">
+
+**Coefficient of Variation:**
+
+<img src="image/eda_cv0.png" width="300">
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
-
-### 4.6 Space Study
-
-The clustering process becomes more efficient as clusters are more cohesive and more separate from one another.
-This result can be achieved through the creation of new features capable of improving clustering or through mathematical transformations that generate new data spaces, also called embedding spaces.
-
-In this project, 4 algorithms were tested to create these new spaces: PCA, UMAP, t-SNE and Tree Based Embedding. Their results can be seen below.
-
 
 
 ## 5. Data Preparation
 
-### 5.1 Feature Transformation
+### 5.1 Feature Selection: 
 
-### 5.2 Feature Selection: 
+For this project, it was not necessary to use an algorithm to select features. From the EDA the following variables were chosen:
+
+<img src="image/eda_cv.png" width="300">
+
+*Returns_no has 65,5% of the records zeroed and for this reason, was not selected*
+
+### 5.2 Feature Transformation:
+
+As the dataset does not have categorical attributes and none showed a normal pattern, rescale was applied with minmaxscaler for all features.
+
+### 5.3 Embedding Space Preparation:
+
+The clustering process becomes more efficient as clusters are more cohesive and more separate from each other.
+
+This result can be achieved by creating new attributes that have a high coefficient of variation, as previously discussed. And it can also be obtained through mathematical transformations that generate new data spaces, called embedding spaces.
+
+In this project, 4 algorithms were tested to create these new spaces: PCA, UMAP, t-SNE and Tree Based Embedding. Clustering algorithms will be applied to each of the spaces generated and, for the progress of the project, the one with the best performance will be chosen.
+
+* **PCA:**
+
+<img src="image/space_embedding_pca.png" width="500">
+
+* **UMAP:**
+
+<img src="image/space_embedding_umap.png" width="500">
+
+* **t-SNE:**
+
+<img src="image/space_embedding_tsne.png" width="500">
+
+* **Tree Based Embedding:**
+
+<img src="image/space_embedding_tree.png" width="500">
+
+
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
