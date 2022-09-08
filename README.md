@@ -101,6 +101,7 @@ In this step, the following features were created:
 * **Frequency:** average amount of purchases made per day by a customer.
 * **Returns:** total amount of items returned by each customer.
 * **Satisfaction Rate:** % of items that were not returned by each customer.
+* **Recorrence:** number of months that the customer made purchases on the e-commerce.
 
 ### 4.5. Exploratory Data Analysis
 
@@ -110,7 +111,7 @@ To verify the correlation between the features, Spearman's rank correlation coef
 
 **Coefficient of Variation:**
 
-<img src="image/eda_cv0.png" width="300">
+<img src="image/eda_cv0.png" width="250">
 
 **Correlation:**
 
