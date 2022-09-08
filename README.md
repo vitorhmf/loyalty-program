@@ -108,15 +108,15 @@ The main objective of this step was to assess how each feature varied in the dat
 
 To verify the correlation between the features, Spearman's rank correlation coefficient was used and to compare the variation of each feature, the coefficient of variation was used as a parameter. The analysis was performed using the pandas profiling package.
 
-From these two analyses, 4 attributes were filtered for the next steps, as shown below.
+**Coefficient of Variation:**
+
+<img src="image/eda_cv0.png" width="300">
 
 **Correlation:**
 
 <img src="image/eda_correlations.png" width="600">
 
-**Coefficient of Variation:**
 
-<img src="image/eda_cv0.png" width="300">
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
@@ -129,7 +129,7 @@ For this project, it was not necessary to use an algorithm to select features. F
 
 <img src="image/eda_cv.png" width="300">
 
-*Returns_no has 65,5% of the records zeroed and for this reason, was not selected*
+**Returns_no has 65,5% of the records zeroed and for this reason, was not selected*
 
 ### 5.2 Feature Transformation:
 
@@ -165,9 +165,17 @@ In this project, 4 algorithms were tested to create these new spaces: PCA, UMAP,
 
 ## 6. Machine Learning Modeling
 
+### 6.1 Metrics
+
+### 6.2 Hyperparameters
+
+### 6.3 Modeling
+
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
 ## 7. Evaluation
+
+### 7.1 Cluster Analysis
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
