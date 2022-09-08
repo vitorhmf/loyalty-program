@@ -66,7 +66,7 @@ The clustering will be performed from a dataset with 541,909 purchase records, 4
 To build an overview of the data, the following steps were performed:
 * Change the columns name to sneak_case;
 * Shows the data dimensions (rows and columns);
-* Check and Fillout NA: The initial dataset contained 135,080 records without the customer id. As it represents about 25% of the dataset, this data could not be simply disregarded. To solve this problem, customers ids were created starting from the number 19000 for each record that did not contain this attribute.
+* Check and Fillout NA: The initial dataset contained 135,080 records without the customer ID. As it represents about 25% of the total, this data could not simply be disregarded. To try to solve this problem, an attempt was made to create client ids from the number 19000 for each record that did not contain this attribute. However, this strategy generated a bias in the data analysis, as it considerably increased the number of customers who made only one purchase. In this way, the data without the customer ID was actually eliminated.
 
 ### 4.2 Data Descriptive: 
 
@@ -104,9 +104,24 @@ In this step, the following features were created:
 
 ### 4.5. Exploratory Data Analysis
 
-The Exploratory Data Analysis was performed using the pandas profiling package. 
+The main objective of this step was to assess how each feature varied in the dataset. In the clustering process, features with a low variation make it difficult to form well-segmented clusters, thus, attributes with low variation or a high correlation will be filtered out in the following steps.
+
+To verify the correlation between the features, Spearman's rank correlation coefficient was used and to compare the variation of each feature, the coefficient of variation was used as a parameter. The analysis was performed using the pandas profiling package.
+
+From these two analyses, 4 attributes were filtered for the next steps, as shown below.
+
+
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
+
+### 4.6 Space Study
+
+The clustering process becomes more efficient as clusters are more cohesive and more separate from one another.
+This result can be achieved through the creation of new features capable of improving clustering or through mathematical transformations that generate new data spaces, also called embedding spaces.
+
+In this project, 4 algorithms were tested to create these new spaces: PCA, UMAP, t-SNE and Tree Based Embedding. Their results can be seen below.
+
+
 
 ## 5. Data Preparation
 
