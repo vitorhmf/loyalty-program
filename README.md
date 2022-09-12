@@ -6,7 +6,15 @@
 
 ## 1. Abstract
 
-This repository contains the solution of clustering valuable clients in order to launch a loyalty program called Insiders
+The company All in One Place is a Multibrand Outlet that sells second-line products from various brands at a lower price, through an e-commerce. After 1 year of business operations, the marketing team decided to launch a loyalty program for the best customers in the base, called Insiders. 
+
+This **clustering project** was carried out from a dataset with 4,373 customers and 541,909 records of purchases made between December 2010 and December 2011. 
+
+The final result of the algorithm selected 162 people for the Insiders cluster. They are 3.7% of the base's customers, which represent 37% of the company's total revenue. 
+
+All the details of each cluster formed are presented in a dashboard that can be accessed through this link.
+
+
 
 **Keywords:** Python, Pandas
 
@@ -55,7 +63,9 @@ The clustering will be performed from a dataset with 541,909 purchase records, 4
 
 *Source:* [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 
-### 3.2. Business assumption: 
+### 3.2. Business assumption:
+
+Only records with values above $0.04 were considered valid for analysis.
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
@@ -80,7 +90,7 @@ Negative quantity and unit price indicate returns. These cases will be dealt wit
 
 **Categorical Attributes:**
 
-<img src="image/cat_attributes.png" width="700">
+<img src="image/cat_attributes.png" width="650">
 
 The fact that the invoice number and stock code features appear as categorical attributes indicates that we have some records that have letters in their compositions and not just numbers as would normally be expected.
 
@@ -198,6 +208,10 @@ As the embedding spaces did not present better results, let's follow the cluster
 
 ### 7.1 Cluster Analysis
 
+The clustering result is summarized in the table below, where the average values for each attribute of the dataset are presented.
+
+<img src="image/cluster_results.png" width="800">
+
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
 ## 8. Deployment
@@ -207,6 +221,10 @@ As the embedding spaces did not present better results, let's follow the cluster
 ## 9. Conclusion
 
 ### 9.1. Business Results
+
+The Insider cluster, which will have the greatest benefits from the loyalty program, is composed of 162 people (3.75% of total customers) and represents 37.1% of the company's total revenue. 
+
+From the clustering of this customer base, the marketing team can carry out much more assertive actions, seeking, for example, to retain Insider customers or development campaigns so that customers from the pre-insiders cluster develop their purchases and become part of the special group.
 
 ### 9.2. Next Steps
 
