@@ -168,9 +168,29 @@ In this project, 4 algorithms were tested to create these new spaces: PCA, UMAP,
 
 ### 6.1 Metrics
 
-### 6.2 Hyperparameters
+The silhouette score was chosen to evaluate the clustering algorithms' performance. The silhouette value measures how similar an object is to its own cluster (cohesion) compared to other clusters (separation).
 
-### 6.3 Modeling
+### 6.2 Modeling
+
+In this project, for each defined data space, the clustering algorithms Kmeans, Gaussian Mixture Model (GMM), and Hierarchical Clustering (HC) were tested, ranging from 2 to 10 clusters. Below are the silhouette score results for each of the analyzed scenarios.
+
+* **Original Feature Space:**
+
+<img src="image/results_features.png" width="700">
+
+* **UMAP:**
+
+<img src="image/results_umap.png" width="700">
+
+* **t-SNE:**
+
+<img src="image/results_tsne.png" width="700">
+
+* **Tree Based Embedding:**
+
+<img src="image/results_tree.png" width="700">
+
+As the embedding spaces did not present better results, let's follow the clustering using the original feature space and the Kmeans algorithm. And for reasons of practicality for the business, 6 clusters will be chosen for this project.
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
@@ -197,6 +217,7 @@ In this project, 4 algorithms were tested to create these new spaces: PCA, UMAP,
 * [IBM Docs](https://www.ibm.com/docs/en/spss-modeler/18.2.0?topic=dm-crisp-help-overview)
 * [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 * [Comunidade DS](https://www.comunidadedatascience.com/)
+* [Wikipedia](https://en.wikipedia.org/wiki/Silhouette_(clustering))
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
