@@ -12,7 +12,7 @@ This **clustering project** was carried out from a dataset with 4,373 customers 
 
 The final result of the algorithm selected 162 people for the Insiders cluster. They are 3.7% of the base's customers, which represent 37% of the company's total revenue. 
 
-All the details of each cluster formed are presented in a dashboard that can be accessed through this link.
+All the details of each cluster formed are presented in a dashboard that can be accessed through this [link](http://localhost:3000/public/dashboard/0e70be23-4eaf-4371-9612-a95d9593f0b5).
 
 
 
