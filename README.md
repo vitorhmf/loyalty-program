@@ -1,4 +1,4 @@
-# Insiders Loyalty Program (Under Development)
+# Insiders Loyalty Program
 
 ### Unsupervised Learning - Clustering Project
 
@@ -12,7 +12,7 @@ This **clustering project** was carried out from a dataset with 4,373 customers 
 
 The final result of the algorithm selected 162 people for the Insiders cluster. They are 3.7% of the base's customers, which represent 37% of the company's total revenue. 
 
-All the details of each cluster formed are presented in a dashboard that can be accessed through this [link].
+All the details of each cluster formed are presented in a dashboard that can be accessed through this [link](http://metabase-env-1.eba-7pq32h2g.us-east-1.elasticbeanstalk.com/public/dashboard/1c3af7bd-d280-4a06-95d4-441c69983192).
 
 
 
@@ -215,6 +215,15 @@ The clustering result is summarized in the table below, where the average values
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
 ## 8. Deployment
+
+The project was put into production through the AWS cloud. Below are the services used:
+
+* **S3:** The original dataset was saved in a bucket on S3.
+* **EC2:** An EC2 instance was created to process the notebook in python and perform transformations on the dataset saved in S3.
+* **RDS:** After clustering the dataset, the final result was saved to a Postgres database in RDS.
+* **Elastic Beanstalk:** This AWS service has deployed Metabase, an open source business intelligence tool that lets you create charts and dashboards using data from multiple databases and data sources. In the case of this project, Metabase was connected to the database saved in RDS.
+
+The final data product is avalable [here](http://metabase-env-1.eba-7pq32h2g.us-east-1.elasticbeanstalk.com/public/dashboard/1c3af7bd-d280-4a06-95d4-441c69983192)
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
