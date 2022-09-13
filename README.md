@@ -241,10 +241,11 @@ From the clustering of this customer base, the marketing team can carry out much
 
 ## 10. References
 
-* [IBM Docs](https://www.ibm.com/docs/en/spss-modeler/18.2.0?topic=dm-crisp-help-overview)
+* [CRISP-DM (IBM Docs)](https://www.ibm.com/docs/en/spss-modeler/18.2.0?topic=dm-crisp-help-overview)
 * [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 * [Comunidade DS](https://www.comunidadedatascience.com/)
-* [Wikipedia](https://en.wikipedia.org/wiki/Silhouette_(clustering))
+* [Silhouett Score (Wikipedia)](https://en.wikipedia.org/wiki/Silhouette_(clustering))
+* [Running Metabase on AWS](https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-elastic-beanstalk)
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
