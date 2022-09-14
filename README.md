@@ -20,7 +20,7 @@ All the details of each cluster formed are presented in a dashboard that can be 
 
 
 
-**Keywords:** Python, Pandas
+**Keywords:** Python, Pandas, Clustering, Silhouette Score, Kmeans, GMM, Hierarchical Clustering, Embedding Space, PCA, UMAP, t-SNE, Random Forest, AWS, PostgreSQL, Metabase
 
 ## 2. Methodology
 
