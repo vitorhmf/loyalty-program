@@ -14,6 +14,10 @@ The final result of the algorithm selected 162 people for the Insiders cluster. 
 
 All the details of each cluster formed are presented in a dashboard that can be accessed through this [link](http://metabase-env-1.eba-7pq32h2g.us-east-1.elasticbeanstalk.com/public/dashboard/1c3af7bd-d280-4a06-95d4-441c69983192).
 
+<img src="image/dashboard_overview.png" width="1000">
+
+*Dashboard overview*
+
 
 
 **Keywords:** Python, Pandas
@@ -223,7 +227,11 @@ The project was put into production through the AWS cloud. Below are the service
 * **RDS:** After clustering the dataset, the final result was saved to a Postgres database in RDS.
 * **Elastic Beanstalk:** This AWS service has deployed Metabase, an open source business intelligence tool that lets you create charts and dashboards using data from multiple databases and data sources. In the case of this project, Metabase was connected to the database saved in RDS.
 
-The final data product is avalable [here](http://metabase-env-1.eba-7pq32h2g.us-east-1.elasticbeanstalk.com/public/dashboard/1c3af7bd-d280-4a06-95d4-441c69983192)
+The final data product to be presented to the business team is a dashboard containing a summary of the main attributes of each cluster. This material can be accessed through this [link](http://metabase-env-1.eba-7pq32h2g.us-east-1.elasticbeanstalk.com/public/dashboard/1c3af7bd-d280-4a06-95d4-441c69983192)
+
+<img src="image/dashboard_overview.png" width="1000">
+
+*Dashboard overview*
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
@@ -236,6 +244,8 @@ The Insider cluster, which will have the greatest benefits from the loyalty prog
 From the clustering of this customer base, the marketing team can carry out much more assertive actions, seeking, for example, to retain Insider customers or development campaigns so that customers from the pre-insiders cluster develop their purchases and become part of the special group.
 
 ### 9.2. Next Steps
+
+* Do tests with the embedding spaces in multiple dimensions.
 
 [Back to the top](https://github.com/vitorhmf/loyalty-program#2-methodology)
 
