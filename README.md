@@ -12,7 +12,7 @@ This **clustering project** was carried out from a dataset with 4,373 customers 
 
 The final result of the algorithm selected 162 people for the Insiders cluster. They are 3.7% of the base's customers, which represent 37% of the company's total revenue. 
 
-All the details of each cluster formed are presented in a dashboard that can be accessed through this [link](http://metabase-env-1.eba-7pq32h2g.us-east-1.elasticbeanstalk.com/public/dashboard/1c3af7bd-d280-4a06-95d4-441c69983192).
+The dashboard was developed with Metabase and deployed on AWS, however, due to maintenance costs, it was taken down.
 
 <img src="image/dashboard_overview.png" width="1000">
 
@@ -227,7 +227,7 @@ The project was put into production through the AWS cloud. Below are the service
 * **RDS:** After clustering the dataset, the final result was saved to a Postgres database in RDS.
 * **Elastic Beanstalk:** This AWS service has deployed Metabase, an open source business intelligence tool that lets you create charts and dashboards using data from multiple databases and data sources. In the case of this project, Metabase was connected to the database saved in RDS.
 
-The final data product to be presented to the business team is a dashboard containing a summary of the main attributes of each cluster. This material can be accessed through this [link](http://metabase-env-1.eba-7pq32h2g.us-east-1.elasticbeanstalk.com/public/dashboard/1c3af7bd-d280-4a06-95d4-441c69983192)
+The final data product to be presented to the business team is a dashboard containing a summary of the main attributes of each cluster. The dashboard was developed with Metabase and deployed on AWS, however, due to maintenance costs, it was taken down.
 
 <img src="image/dashboard_overview.png" width="1000">
 
